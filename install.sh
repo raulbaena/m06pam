@@ -7,9 +7,9 @@ useradd -g users  exam01
 useradd -g users  exam02
 useradd -g users  exam03
 
-echo "exam01" | passwd --stdin exam
-echo "exam02" | passwd --stdin exam
-echo "exam03" | passwd --stdin exam
+echo "exam01" | passwd --stdin exam01
+echo "exam02" | passwd --stdin exam02
+echo "exam03" | passwd --stdin exam03
 
 cp /opt/docker/ldap.conf /etc/openldap/ldap.conf
 cp /opt/docker/nsswitch.conf /etc/nsswitch.conf
